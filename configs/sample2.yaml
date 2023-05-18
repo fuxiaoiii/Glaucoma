@@ -1,0 +1,23 @@
+exp_id: 5_1pretrainedmodel
+fold_num: 4
+resize: 256
+epochs: 50
+batch_size: 64
+num_workers: 0
+data_dir: '/home/wangqy/gardnet'
+images_dir_name: 'cropped_images'
+test_images_dir_name : 'dataset/*'
+run_test: True
+model_name: resnet18 # any model supported by timm (https://github.com/rwightman/pytorch-image-models/tree/master/timm/models)
+pretrained: False
+optimizer_name: Adam
+momentum: 0.1
+scheduler: null
+lr_step_period: 5
+lr: 1e-3
+patience: 5
+apply_augs: Flase
+apply_clahe: False
+dropout: 0.0
+apply_scaling: False
+polar_transform: False
